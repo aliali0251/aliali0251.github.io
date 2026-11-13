@@ -1,0 +1,20 @@
+title: وب‌سایت شخصی
+description: معرفی، مهارت‌ها و نمونه‌کارها
+lang: fa
+timezone: Asia/Tehran
+markdown: kramdown
+permalink: pretty
+collections:
+  projects:
+    output: true
+    sort_by: date
+    permalink: /projects/:name/
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+exclude:
+  - README.md
+  - .pages.yml
