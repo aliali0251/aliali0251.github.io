@@ -1,0 +1,84 @@
+media:
+  input: assets/uploads
+  output: /assets/uploads
+
+content:
+  - name: profile
+    label: اطلاعات شخصی
+    type: file
+    path: _data/profile.yml
+    fields:
+      - name: name
+        label: نام
+        type: string
+      - name: role
+        label: عنوان حرفه‌ای
+        type: string
+      - name: intro
+        label: معرفی کوتاه
+        type: text
+      - name: about
+        label: درباره من
+        type: rich-text
+      - name: email
+        label: ایمیل
+        type: string
+      - name: location
+        label: محل فعالیت
+        type: string
+      - name: avatar
+        label: تصویر پروفایل
+        type: image
+      - name: resume
+        label: لینک رزومه
+        type: string
+      - name: github
+        label: گیت‌هاب
+        type: string
+      - name: linkedin
+        label: لینکدین
+        type: string
+      - name: instagram
+        label: اینستاگرام
+        type: string
+      - name: telegram
+        label: تلگرام
+        type: string
+
+  - name: projects
+    label: نمونه‌کارها
+    type: collection
+    path: _projects
+    filename: "{fields.slug}.md"
+    fields:
+      - name: title
+        label: عنوان پروژه
+        type: string
+      - name: slug
+        label: شناسه انگلیسی
+        type: string
+      - name: category
+        label: دسته‌بندی
+        type: string
+      - name: summary
+        label: توضیح کوتاه
+        type: text
+      - name: cover
+        label: تصویر پروژه
+        type: image
+      - name: url
+        label: لینک پروژه
+        type: string
+      - name: featured
+        label: نمایش در صفحه اصلی
+        type: boolean
+      - name: date
+        label: تاریخ
+        type: date
+      - name: body
+        label: توضیحات کامل
+        type: rich-text
+
+settings:
+  content:
+    merge: true
