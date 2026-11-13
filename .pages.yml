@@ -45,6 +45,22 @@ content:
         label: تلگرام
         type: string
 
+  - name: skills
+    label: مهارت‌ها
+    type: collection
+    path: _skills
+    filename: "{fields.name}.md"
+    fields:
+      - name: name
+        label: نام مهارت
+        type: string
+      - name: level
+        label: سطح یا توضیح
+        type: string
+      - name: group
+        label: دسته
+        type: string
+
   - name: projects
     label: نمونه‌کارها
     type: collection
