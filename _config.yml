@@ -9,6 +9,8 @@ collections:
     output: true
     sort_by: date
     permalink: /projects/:name/
+  skills:
+    output: false
 defaults:
   - scope:
       path: ""
